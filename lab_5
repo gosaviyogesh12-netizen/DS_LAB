@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rollNos[5];
+
+    // Taking input from the user
+    cout << "Enter the roll numbers of 5 students:" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Student " << (i + 1) << ": ";
+        cin >> rollNos[i];
+    }
+
+    // Displaying the roll numbers
+    cout << "\n--- Roll Numbers Entered ---" << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << "Student " << (i + 1) << " Roll No: " << rollNos[i] << endl;
+    }
+
+    return 0;
+}
