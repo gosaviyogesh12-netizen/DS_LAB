@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void displayMenu() {
+    int choice;
+
+    cout << "\n===== RESTAURANT MENU =====\n";
+    cout << "1. Pizza\n";
+    cout << "2. Burger\n";
+    cout << "3. Pasta\n";
+    cout << "4. Biryani\n";
+    cout << "5. Exit\n";
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "You selected Pizza.\n";
+            break;
+
+        case 2:
+            cout << "You selected Burger.\n";
+            break;
+
+        case 3:
+            cout << "You selected Pasta.\n";
+            break;
+
+        case 4:
+            cout << "You selected Biryani.\n";
+            break;
+
+        case 5:
+            cout << "Thank you for visiting! Goodbye.\n";
+
+        default:
+            cout << "Invalid choice. Please try again.\n";
+    }
+
+    // Recursive call to display the menu again
+    displayMenu();
+}
+
+int main() {
+    displayMenu();
+    return 0;
+}
